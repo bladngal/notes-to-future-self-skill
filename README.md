@@ -125,19 +125,20 @@ If you use Claude Code, you can add this as a skill:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/notes-to-future-self-skill.git
+   git clone https://github.com/bladngal/notes-to-future-self-skill.git
    cd notes-to-future-self-skill
    ```
 
 2. **Create your Notes directory structure:**
+   Choose where you want to store your notes (e.g., `~/Notes-To-My-Future-Self`, `~/my-notes`, `/path/to/your/notes`, etc.)
    ```bash
-   mkdir -p ~/Documents/Notes-To-My-Future-Self/{Household_Maintenance,Product_Reviews_Decisions,Health_Wellness,Recipes_Cooking,Tech_Setups_Tools,Learning_Exploration,Emergency_Preparedness}
+   mkdir -p ~/Notes-To-My-Future-Self/{Household_Maintenance,Product_Reviews_Decisions,Health_Wellness,Recipes_Cooking,Tech_Setups_Tools,Learning_Exploration,Emergency_Preparedness}
    ```
 
 3. **Copy templates to your Notes folder:**
    ```bash
-   cp references/CHAT_SUMMARY_TEMPLATE.md ~/Documents/Notes-To-My-Future-Self/CHAT_SUMMARY_TEMPLATE.md
-   cp references/PROMPT_FOR_EXTRACTING_SUMMARIES.md ~/Documents/Notes-To-My-Future-Self/PROMPT_FOR_EXTRACTING_SUMMARIES.md
+   cp references/CHAT_SUMMARY_TEMPLATE.md ~/Notes-To-My-Future-Self/CHAT_SUMMARY_TEMPLATE.md
+   cp references/PROMPT_FOR_EXTRACTING_SUMMARIES.md ~/Notes-To-My-Future-Self/PROMPT_FOR_EXTRACTING_SUMMARIES.md
    ```
 
 4. **Set up the helper script (optional):**
@@ -150,9 +151,10 @@ If you use Claude Code, you can add this as a skill:
    ```
 
 5. **Configure the script path (if needed):**
+   The script will automatically look for your Notes folder in the parent directories. If you want to use a custom location, set the environment variable:
    ```bash
-   # Set the NOTES_DIR environment variable to point to your notes folder
-   export NOTES_DIR=~/Documents/Notes-To-My-Future-Self
+   # Point to your notes folder (change the path to match your setup)
+   export NOTES_DIR=~/Notes-To-My-Future-Self
    ```
 
 ## Quick Start

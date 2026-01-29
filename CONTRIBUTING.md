@@ -5,7 +5,7 @@ Thanks for your interest in improving this skill! Contributions are welcome and 
 ## Ways to Contribute
 
 ### 1. Report Bugs or Issues
-- Use the [Issues](https://github.com/yourusername/notes-to-future-self-skill/issues) section
+- Use the [Issues](https://github.com/bladngal/notes-to-future-self-skill/issues) section
 - Check if the issue already exists before creating a new one
 - Provide a clear description of the problem
 - Include any error messages or steps to reproduce
